@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+    <script src="example.js" type="text/javascript"></script>
+<body>
+<div id="result"></div>
+<script>
+ function setSesssionId(sessionId){
+	localStorage.setItem('sessionID',sessionId);
+        console.log("session from Javascript" + localStorage.sessionId);
+
+
+}
+
+ document.getElementById("result").innerHTML="Press generate to know the sessionId";
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>A browser without support for JavaScript will show the text in the noscript element.</p>
+ 
+
+</body>
+</html>
+

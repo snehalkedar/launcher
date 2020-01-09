@@ -1,0 +1,21 @@
+<html>
+<body>
+<div id="result"></div>
+<script>
+
+ document.write("Hello New World!")
+ document.getElementById("result").innerHTML="SessionId: "+localStorage.sessionID;
+
+ for (i=0; i<=localStorage.length-1; i++)  
+    {  
+        key = localStorage.key(i);  
+        alert(localStorage.getItem(key));
+    }  
+
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+<p>A browser without support for JavaScript will show the text in the noscript element.</p>
+ 
+</body>
+</html>
